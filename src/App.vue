@@ -1,12 +1,13 @@
 <template>
   <Header />
   <main>
-    <aside>
+    <aside class="sticky z-20 top-0">
       <Sidebar />
+    </aside>
       <div class="main">
         <!-- View pages -->
       </div>
-    </aside>
+    
   </main>
   <Footer />
 </template>

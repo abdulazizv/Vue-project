@@ -26,6 +26,10 @@ export default {
 };
 </script>
 
-<style >
-
+<style scoped lang="css">
+  .active {
+    background-color: rgb(107,8,177) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+  }
 </style>
