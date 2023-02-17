@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-center bg-green-600">Hello</h1>
+    <h1 class="text-center bg-green-600 pt">Hello</h1>
   </div>
 </template>
 
