@@ -1,12 +1,27 @@
 <template>
-  <div>
-    <h1 class="text-center bg-green-600 pt">Hello</h1>
-  </div>
+  <Header />
+  <main>
+    <aside>
+      <Sidebar />
+      <div class="main">
+        <!-- View pages -->
+      </div>
+    </aside>
+  </main>
+  <Footer />
 </template>
 
 <script>
+  import Header from './components/Header/Header.vue';
+  import Sidebar from './components/Sidebar/Sidebar.vue';
+  import Footer from './components/Footer/Footer.vue';
 export default {
   name: "App",
+  components:{
+    Header,
+    Sidebar,
+    Footer
+  }
 };
 </script>
 
