@@ -1,11 +1,12 @@
 <template>
-  <Header />
-  <main>
-    <aside class="sticky z-20 top-0">
-      <Sidebar />
+  <Header :toogleBtn="toggleMenu"/>
+  <main class="flex">
+    <aside class="sticky z-20 top-0 w-[320px]">
+      <Sidebar :toogle="toggled"/>
     </aside>
-      <div class="main">
+      <div class="main bg-indigo-100 min-w-full h-screen">
         <!-- View pages -->
+        <Home />
       </div>
     
   </main>
@@ -16,12 +17,24 @@
   import Header from './components/Header/Header.vue';
   import Sidebar from './components/Sidebar/Sidebar.vue';
   import Footer from './components/Footer/Footer.vue';
+  import Home from './views/Home/Home.vue';
 export default {
   name: "App",
   components:{
     Header,
     Sidebar,
-    Footer
+    Footer,
+    Home
+  },
+  data(){
+    return {
+      toggled:true
+    }
+  },
+  methods: {
+    toggleMenu() {
+      this.toggled = !this.toggled
+    }
   }
 };
 </script>
