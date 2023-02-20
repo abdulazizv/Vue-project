@@ -1,11 +1,15 @@
 <template>
 
-        <button>Button</button>
+        <button :type="btnType" class="py-2 px-4 focus:ring-sky-500  focus:ring-2">{{ textContent }}</button>
 
 </template>
 <script>
 export default {
-    name:'Button'
+    name:'Button',
+    props:{
+        btnType:String,
+        textContent:String
+    }   
 }
 </script>
 <style lang="scss">
