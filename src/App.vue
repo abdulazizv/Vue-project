@@ -6,8 +6,8 @@
     </aside>
 
     <div class="main bg-indigo-100 min-w-full h-screen mt-[70px] p-8">
-      <h1>Lorem, ipsum.</h1>
-      <Home />
+      <Form />
+  
     </div>
   </main>
   <Footer />
@@ -18,6 +18,7 @@ import Header from "./components/Header/Header.vue";
 import Sidebar from "./components/Sidebar/Sidebar.vue";
 import Footer from "./components/Footer/Footer.vue";
 import Home from "./views/Home/Home.vue";
+import Form from "./components/Form/Form.vue";
 export default {
   name: "App",
   components: {
@@ -25,6 +26,7 @@ export default {
     Sidebar,
     Footer,
     Home,
+    Form
   },
   data() {
     return {
