@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1 class="text-center text-black">Form elements</h1>
-    <Input />
-    <Input />
+    <Input inputType="text" placeholder="Enter username" labelId="username"/>
+    <Input inputType="password" placeholder="Enter password" labelId="userpassword"/>
     <Button />
   </div>
 </template>
