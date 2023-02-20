@@ -9,8 +9,8 @@
 
           <li class="list__item py-1 px-2" v-for="item in navlink" :key="item.id">
               <RouterLink :to="item.link"
-                  class="flex items-center text-lg rounded-lg shadow border list__item-link min-w-full  hover:bg-indigo-50 duration-300 font-medium bg-white p-4">
-                  <i class='bx  text-indigo-500 text-2xl mr-3' :class="item.icon"></i> <span>{{ item.title }}</span>
+                  class="flex items-center text-lg rounded-lg shadow border list__item-link min-w-full  hover:bg-indigo-50 duration-300 font-medium  p-4">
+                  <i class='bx text-2xl mr-3' :class="item.icon"></i> <span>{{ item.title }}</span>
               </RouterLink>
           </li>
 
@@ -38,9 +38,10 @@ export default {
 </script>
 
 <style scoped>
-.active {
-  background-color: rgb(107, 8, 177) !important;
-  color: #fff !important;
-  font-weight: 600 !important;
-}
+
+.router-link-active {
+    background-color: rgb(107, 8, 177) !important;
+    color: #fff !important;
+    font-weight: 600 !important;  
+  }
 </style>
