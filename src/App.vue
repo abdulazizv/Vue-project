@@ -1,41 +1,41 @@
 <template>
-  <Header :toogleBtn="toggleMenu"/>
+  <Header :toogleBtn="toogleMenu" />
   <main class="flex">
     <aside class="sticky z-20 top-0 w-[320px]">
-      <Sidebar :toogle="toggled"/>
+      <Sidebar :toggle="toggled" />
     </aside>
-      <div class="main bg-indigo-100 min-w-full h-screen">
-        <!-- View pages -->
-        <Home />
-      </div>
-    
+
+    <div class="main bg-indigo-100 min-w-full h-screen mt-[70px] p-8">
+      <h1>Lorem, ipsum.</h1>
+      <Home />
+    </div>
   </main>
   <Footer />
 </template>
 
 <script>
-  import Header from './components/Header/Header.vue';
-  import Sidebar from './components/Sidebar/Sidebar.vue';
-  import Footer from './components/Footer/Footer.vue';
-  import Home from './views/Home/Home.vue';
+import Header from "./components/Header/Header.vue";
+import Sidebar from "./components/Sidebar/Sidebar.vue";
+import Footer from "./components/Footer/Footer.vue";
+import Home from "./views/Home/Home.vue";
 export default {
   name: "App",
-  components:{
+  components: {
     Header,
     Sidebar,
     Footer,
-    Home
+    Home,
   },
-  data(){
+  data() {
     return {
-      toggled:true
-    }
+      toggled: true,
+    };
   },
   methods: {
-    toggleMenu() {
-      this.toggled = !this.toggled
-    }
-  }
+    toogleMenu() {
+      this.toggled = !this.toggled;
+    },
+  },
 };
 </script>
 
